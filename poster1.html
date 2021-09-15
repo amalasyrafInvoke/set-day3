@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hexagon Poster</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 745px;
+        height: 960px;
+        background-color: lightcyan;
+        margin: 0 auto;
+        background-image: url(images/challenge_images/bg-1.png);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .poster-title {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+      }
+
+      .poster-title h1 {
+        color: floralwhite;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* REVISIT LATER */
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: lighter;
+        letter-spacing: 0.2rem;
+      }
+
+      .poster-title h4 {
+        color: darkcyan;
+        letter-spacing: 0.8rem;
+        line-height: 1.8rem;
+      }
+
+      .poster-title p {
+        color: darkslategray;
+        font-size: 0.8rem;
+      }
+
+      .description {
+        position: absolute;
+        width: 270px;
+        left: 40px;
+        top: 545px;
+      }
+
+      .description h4 {
+        color: darkcyan;
+        margin-bottom: 8px;
+        letter-spacing: 0.8rem;
+        text-align: justify;
+      }
+
+      .description p {
+        color: gray;
+        text-align: justify;
+      }
+
+      .company-website {
+        color: darkcyan;
+        position: absolute;
+        top: 920px;
+        left: 40px;
+      }
+
+      .hex-container1 {
+        position: absolute;
+        top: 300px;
+        left: 305px;
+        transform: rotate(-15deg);
+        z-index: 3;
+      }
+
+      .hex-container2 {
+        position: absolute;
+        top: 485px;
+        left: 530px;
+        z-index: 2;
+        transform: rotate(-15deg);
+      }
+
+      .hex-container3 {
+        position: absolute;
+        top: -80px;
+        left: 430px;
+        transform: rotate(-15deg);
+        z-index: 1;
+      }
+
+      .hexagon {
+        position: relative;
+        width: 200px;
+        height: 115.47px;
+        background-color: white;
+        margin: 57.74px 0;
+      }
+
+      .hexagon {
+        position: relative;
+        width: 250px;
+        height: 144.34px;
+        background-color: white;
+        margin: 72.17px 0;
+      }
+
+      .hexagon:before,
+      .hexagon:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        border-left: 125px solid transparent;
+        border-right: 125px solid transparent;
+      }
+
+      .hexagon:before {
+        bottom: 100%;
+        border-bottom: 72.17px solid white;
+      }
+
+      .hexagon:after {
+        top: 100%;
+        width: 0;
+        border-top: 72.17px solid white;
+      }
+
+      .big-hexagon {
+        position: relative;
+        width: 450px;
+        height: 258.81px;
+        background-color: gold;
+        margin: 129.9px 0;
+      }
+
+      .big-hexagon:before,
+      .big-hexagon:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        border-left: 225px solid transparent;
+        border-right: 225px solid transparent;
+      }
+
+      .big-hexagon:before {
+        bottom: 100%;
+        border-bottom: 129.9px solid gold;
+      }
+
+      .big-hexagon:after {
+        top: 100%;
+        width: 0;
+        border-top: 129.9px solid gold;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="poster-title">
+        <h1>HEADLINE</h1>
+        <h4>SPACE HERE</h4>
+        <p>Lorem Ipsum. Pellentesque id neque</p>
+      </div>
+
+      <div class="description">
+        <h4>TITLE TEXT</h4>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+
+      <div class="company-website">
+        <h6>www.companyname.com</h6>
+      </div>
+
+      <div class="hex-container1">
+        <div class="hexagon hex1"></div>
+      </div>
+      <div class="hex-container2">
+        <div class="hexagon hex2"></div>
+      </div>
+      <div class="hex-container3">
+        <div class="big-hexagon hex3"></div>
+      </div>
+    </div>
+  </body>
+</html>
